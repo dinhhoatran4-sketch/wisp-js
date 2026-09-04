@@ -23,4 +23,4 @@ server.on("listening", () => {
   console.log("HTTP server listening");
 });
 
-server.listen(10000, "0.0.0.0");
+server.listen(process.env.PORT || 10000, "0.0.0.0");
